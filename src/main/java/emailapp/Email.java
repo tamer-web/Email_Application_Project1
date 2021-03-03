@@ -6,14 +6,13 @@ public class Email {
     private final String firstName;
     private final String lastName;
     private String password;
-    private final String email;
+    private  String email;
     private int mailBoxCapacity=500;
     private String alternateEmail;
 
     // Overload Constructor
     public Email(String firstName,String lastName,String password,String email,int mailBoxCapacity,String alternateEmail){
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this (firstName,lastName);
         this.password= password;
         this.email = email;
         this.mailBoxCapacity= mailBoxCapacity;
